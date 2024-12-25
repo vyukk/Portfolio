@@ -11,6 +11,7 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #333;
     color: white;
@@ -25,29 +26,87 @@ button {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #555;
 }
 
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Active Section Highlight */
+.navbar a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Content */
 .content {
     padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
     color: #333;
     margin-top: 20px;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 ul li {
     margin: 5px 0;
 }
 
+/* Projects Section */
+.project {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #555;
+}
+
+/* Links */
 a {
     color: #007BFF;
     text-decoration: none;
@@ -57,10 +116,34 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     text-align: center;
     margin-top: 40px;
     padding: 20px;
     background-color: #333;
     color: white;
+}
+
+footer a {
+    color: #ffcc00;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 15px;
+    }
 }
