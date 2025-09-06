@@ -7,20 +7,20 @@ const projects = [
     description:
       "An animation-rich, responsive site for TEDxIIMT to showcase event details, speaker profiles, and dynamic user interactions.",
     tech: ["React", "Framer Motion", "Tailwind CSS"],
-    link: "#",
+    link: "https://lemon-rock-072ccdf10.1.azurestaticapps.net/",
   },
   {
-    title: "Hardware Store eCommerce App",
+    title: "StudyMate",
     description:
-      "A full-featured eCommerce app for a local hardware store. Includes product listings, shopping cart, and admin dashboard.",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    link: "#",
+      " A modern React application to help students organize their notes and track assignment deadlines.",
+    tech: ["React", "Node.js", "Firebase"],
+    link: "https://github.com/vyukk/studymate",
   },
   {
-    title: "Animated Landing Page",
+    title: "Campus problem reporter",
     description:
-      "A beautiful landing page with scroll animations and rich transitions to showcase modern web techniques.",
-    tech: ["React", "GSAP", "Tailwind"],
+      "A platform for students to report and discuss campus issues, featuring user authentication and real-time chat.",
+    tech: ["React", "Socket.io", "Node.js"],
     link: "#",
   },
 ];
